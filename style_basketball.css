@@ -1,0 +1,19 @@
+/* Import des styles de base */
+@import url('style_boutique.css');
+
+/* Styles spécifiques à la page basketball */
+.shop {
+  background-color: var(--creme);
+}
+
+.shop h2 {
+  color: var(--orange);
+}
+
+.product-card {
+  border-color: var(--orange);
+}
+
+.product-card h3 {
+  color: var(--orange);
+}

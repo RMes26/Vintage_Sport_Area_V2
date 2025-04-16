@@ -1,0 +1,144 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600&display=swap');
+
+/* Couleurs */
+:root {
+  --creme: #FFF8E6;
+  --beige: #C8BFB1;
+  --brun: #45403A;
+  --noir: #252422;
+  --orange: #E85D0F;
+}
+
+/* Style général */
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--creme);
+  color: var(--noir);
+}
+
+header {
+  background-color: var(--noir);
+  color: var(--creme);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: var(--brun);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: var(--creme);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--orange);
+}
+
+.hero {
+  background: linear-gradient(rgba(37,36,34,0.7), rgba(37,36,34,0.7)), url('images/background-sports.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 20px;
+  color: #FFF8E6;
+}
+
+.hero h1 {
+  color: #FFF8E6;
+  font-size: 36px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: #E85D0F;
+  color: #FFF8E6;
+  padding: 12px 25px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #45403A;
+}
+
+footer {
+  background-color: var(--noir);
+  color: var(--creme);
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.mission, .values {
+  padding: 40px 20px;
+  background-color: var(--beige);
+  color: var(--noir);
+  text-align: center;
+}
+
+.mission h2, .values h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.mission p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Oswald', sans-serif;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.values li {
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn-retour {
+  display: block;
+  margin: 20px auto 0;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-retour:hover {
+  background-color: #e65c00;
+}
+

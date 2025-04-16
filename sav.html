@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Service Après Vente - Vintage Sport Area</title>
+  <link rel="stylesheet" href="style_sav.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Vintage Sport Area</h1>
+    <p>Service Après Vente - Retour & Remboursement</p>
+  </header>
+
+ <nav>
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Boutique</a>
+    <a href="MB.html">Mystery Box</a>
+    <a href="compte.html">Compte</a>
+    <a href="panier.html">Panier</a>
+  </nav>
+
+  <section class="sav-form-section">
+    <h2>Faire une demande SAV</h2>
+    <form enctype="multipart/form-data" class="sav-form" id="savForm">
+
+      <label for="type">Type de demande :</label>
+      <select id="type" name="type" required>
+        <option value="">-- Choisir --</option>
+        <option>Retour</option>
+        <option>Remboursement</option>
+      </select>
+
+      <label for="commande">Numéro de commande :</label>
+      <input type="text" id="commande" name="commande" placeholder="Ex : CMD-2025-0045" required>
+
+      <label for="motif">Motif :</label>
+      <select id="motif" name="motif" required>
+        <option>Produit défectueux</option>
+        <option>Taille incorrecte</option>
+        <option>Erreur de commande</option>
+        <option>Autre</option>
+      </select>
+
+      <label for="details">Détails supplémentaires :</label>
+      <textarea id="details" name="details" rows="4" placeholder="Décrivez votre demande..."></textarea>
+
+      <label for="photo">Ajouter une photo :</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+
+      <button type="submit" class="btn">Envoyer ma demande</button>
+
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Vintage Sport Area - Tous droits réservés
+  </footer>
+
+  <script>
+   
+    document.getElementById('savForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      alert('Votre demande a bien été envoyée !');
+      window.location.href = 'compte.html'; 
+    });
+  </script>
+
+</body>
+</html>

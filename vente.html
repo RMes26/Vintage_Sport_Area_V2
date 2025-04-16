@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vente de maillot - Vintage Sport Area</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_vente.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Vintage Sport Area</h1>
+    <p>Ajoutez un maillot à vendre</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Boutique</a>
+    <a href="MB.html">Mystery Box</a>
+    <a href="compte.html">Compte</a>
+    <a href="panier.html">Panier</a>
+  </nav>
+
+  <section class="vente-form">
+    <h2>Formulaire de vente</h2>
+    <form enctype="multipart/form-data" id="venteForm">
+
+      <label for="sport">Catégorie :</label>
+      <select id="sport" name="sport" required>
+        <option value="">-- Choisir un sport --</option>
+        <option>Football</option>
+        <option>Basketball</option>
+        <option>Rugby</option>
+      </select>
+
+      <label for="equipe">Équipe ou nation :</label>
+      <input type="text" id="equipe" name="equipe" placeholder="Ex : France, PSG, Bulls" required>
+
+      <label for="championnat">Championnat / Compétition :</label>
+      <input type="text" id="championnat" name="championnat" placeholder="Ex : Ligue 1, NBA, Top 14">
+
+      <label for="saison">Saison :</label>
+      <input type="text" id="saison" name="saison" placeholder="Ex : 1998-1999">
+
+      <label for="taille">Taille :</label>
+      <select id="taille" name="taille">
+        <option value="">-- Choisir --</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+      </select>
+
+      <label for="etat">État du maillot :</label>
+      <select id="etat" name="etat">
+        <option>Neuf</option>
+        <option>Très bon état</option>
+        <option>Bon état</option>
+        <option>Correct</option>
+      </select>
+
+      <label for="prix">Prix (€) :</label>
+      <input type="number" id="prix" name="prix" placeholder="Ex : 120" required>
+
+      <label for="code">Code Sourcing :</label>
+      <input type="text" id="code" name="code" placeholder="Ex : SRC-1986-M-003" required>
+
+      <label for="photos">Photos du maillot :</label>
+      <input type="file" id="photos" name="photos" accept="image/*" multiple required>
+
+      <button type="submit" class="btn-submit">Envoyer pour vérification</button>
+
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Vintage Sport Area - Tous droits réservés
+  </footer>
+
+  <script>
+
+    document.getElementById('venteForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      window.location.href = 'compte.html'; 
+    });
+  </script>
+
+</body>
+</html>

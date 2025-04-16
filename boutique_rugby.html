@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maillots de Rugby - Vintage Sport Area</title>
+  <link rel="stylesheet" href="style_football.css">
+</head>
+<body>
+  <header>
+    <h1>Vintage Sport Area</h1>
+    <p>Maillots de Rugby Vintage</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Boutique</a>
+    <a href="MB.html">Mystery Box</a>
+    <a href="compte.html">Compte</a>
+    <a href="panier.html">Panier</a>
+  </nav>
+
+  <section class="filters">
+    <h2>Filtres</h2>
+    <form action="#" method="get">
+      <label for="marque">Marque :</label>
+      <select id="marque" name="marque">
+        <option value="">-- Choisir --</option>
+        <option value="nike">Nike</option>
+        <option value="adidas">Adidas</option>
+        <option value="puma">Puma</option>
+      </select>
+  
+      <label for="annee">Tranche d'année :</label>
+      <select id="annee" name="annee">
+        <option value="">-- Choisir --</option>
+        <option value="70">Années 70</option>
+        <option value="80">Années 80</option>
+        <option value="90">Années 90</option>
+        <option value="2000">Années 2000</option>
+        <option value="2020">Années 2020</option>
+      </select>
+  
+      <label for="equipe">Équipe :</label>
+      <select id="equipe" name="equipe">
+        <option value="">-- Choisir --</option>
+        <option value="france">France</option>
+        <option value="nouvellezelande">Nouvelle-Zélande</option>
+        <option value="afrique">Afrique du Sud</option>
+        <option value="toulon">RC Toulon</option>
+        <option value="toulouse">Stade Toulousain</option>
+        <option value="leinster">Leinster</option>
+        <option value="springboks">Springboks</option>
+        <option value="munster">Munster</option>
+      </select>
+  
+      <label for="ligue">Ligue :</label>
+      <select id="ligue" name="ligue">
+        <option value="">-- Choisir --</option>
+        <option value="top14">Top 14</option>
+        <option value="premierleague">Premier League</option>
+      </select>
+  
+      <label for="prix">Prix :</label>
+      <input type="range" id="prix" name="prix" min="0" max="300" step="10">
+      <span id="prixLabel">0 € - 300 €</span>
+  
+      <label for="taille">Taille :</label>
+      <select id="taille" name="taille">
+        <option value="">-- Choisir --</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+  
+      <label for="couleur">Couleur :</label>
+      <select id="couleur" name="couleur">
+        <option value="">-- Choisir --</option>
+        <option value="bleu">Bleu</option>
+        <option value="rouge">Rouge</option>
+        <option value="noir">Noir</option>
+        <option value="blanc">Blanc</option>
+      </select>
+  
+      <button type="submit" class="btn">Appliquer les filtres</button>
+    </form>
+  </section>
+  
+
+  <section class="shop">
+    <h2>Maillots de Rugby</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/rugby1.jpeg" alt="Maillot Rugby 1">
+        <h3>France  Années 2000</h3>
+        <p>Prix : 90 €</p>
+        <button class="btn">Ajouter au panier</button>
+      </div>
+      <div class="product-card">
+        <img src="images/rugby2.jpg" alt="Maillot Rugby 2">
+        <h3>Maillot RC Toulon Retro 2010</h3>
+        <p>Prix : 110 €</p>
+        <button class="btn">Ajouter au panier</button>
+      </div>
+      <div class="product-card">
+        <img src="images/rugby3.jpg" alt="Maillot Rugby 3">
+        <h3>Maillot Stade Toulousain</h3>
+        <p>Prix : 130 €</p>
+        <button class="btn">Ajouter au panier</button>
+      </div>
+      <div class="product-card">
+        <img src="images/rugby4.jpg" alt="Maillot Rugby 4">
+        <h3>Maillot Leinster 2022</h3>
+        <p>Prix : 100 €</p>
+        <button class="btn">Ajouter au panier</button>
+      </div>
+      <div class="product-card">
+        <img src="images/rugby5.jpg" alt="Maillot Rugby 5">
+        <h3>Maillot Springboks Classique 2010-2020</h3>
+        <p>Prix : 80 €</p>
+        <button class="btn">Ajouter au panier</button>
+      </div>
+      <div class="product-card">
+        <img src="images/rugby6.jpg" alt="Maillot Rugby 6">
+        <h3>Munster 2022</h3>
+        <p>Prix : 150 €</p>
+        <button class="btn">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Vintage Sport Area - Tous droits réservés
+  </footer>
+</body>
+</html>

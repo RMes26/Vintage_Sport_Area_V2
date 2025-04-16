@@ -1,0 +1,85 @@
+/* Import des styles de base */
+@import url('style_boutique.css');
+
+/* Styles spécifiques à la page football */
+.shop {
+  background-color: var(--creme);
+}
+
+.shop h2 {
+  color: var(--orange);
+}
+
+.product-card {
+  border-color: var(--orange);
+}
+
+.product-card h3 {
+  color: var(--orange);
+}
+
+
+.filters {
+  background-color: var(--beige);
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filters h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: var(--noir);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filters form {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.filters label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color: var(--noir);
+}
+
+.filters select,
+.filters input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid var(--brun);
+  border-radius: 4px;
+}
+
+.filters button {
+  background-color: var(--orange);
+  color: var(--creme);
+  padding: 14px 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  grid-column: span 2;
+  text-align: center;
+}
+
+.filters button:hover {
+  background-color: var(--brun);
+  color: var(--creme);
+}
+
+#prixLabel {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  color: var(--noir);
+  margin-top: 5px;
+  text-align: center;
+}

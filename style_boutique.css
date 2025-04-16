@@ -1,0 +1,126 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600&display=swap');
+
+/* Couleurs */
+:root {
+  --creme: #FFF8E6;
+  --beige: #C8BFB1;
+  --brun: #45403A;
+  --noir: #252422;
+  --orange: #E85D0F;
+}
+
+/* Style général */
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--creme);
+  color: var(--noir);
+}
+
+header {
+  background-color: var(--noir);
+  color: var(--creme);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: var(--brun);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: var(--creme);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--orange);
+}
+
+.btn {
+  background-color: var(--orange);
+  color: #FFF8E6;
+  padding: 12px 25px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--brun);
+}
+
+footer {
+  background-color: var(--noir);
+  color: var(--creme);
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.shop {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--beige);
+}
+
+.shop h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #F3E0C1;
+  border: 1px solid var(--brun);
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 200px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image scales properly */
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 15px 0 10px;
+}
+
+.product-card p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-card a.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
